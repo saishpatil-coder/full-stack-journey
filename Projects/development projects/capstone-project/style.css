@@ -1,0 +1,123 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-size: 5rem;
+}
+nav{
+    justify-content: space-between;
+    min-height: 80px;
+    color: white;
+    align-items: center;
+    background-color: #14162f;
+    padding: 0px 7%;
+    border-bottom: 3px solid rgb(72, 35, 35);
+}
+ul{
+    display: flex;
+}
+h1{
+    font-size: 0.45em;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.logo{
+    align-items: center;
+    gap: 30px;
+}
+nav ul {
+    gap: 40px;
+}
+nav ul li{
+    font-size: 0.2em;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: rgb(150, 150, 171);
+
+}
+
+span{
+    color: rgb(170, 107, 228);
+}
+.profileImage img{
+    height: 50vmin;
+    border-radius: 50%;
+    border: 10px solid rgb(102, 0, 255) ;
+    box-shadow: 5px 5px 30px white;
+}
+.left{
+    flex-direction: column;
+    width: 70%;
+}
+.left h2{
+    font-size: 1em;
+}
+
+.left h3{
+    font-size: 0.7em;
+}
+
+.left h5{
+    font-size: 0.3em;
+}
+
+
+.info , .right{
+    width: 50vw;
+    height: calc(100vh - 50px);
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width : 1000px) {
+    .head{
+        flex-direction: column;
+        height: 80vh;
+        transition: all 0.1s;
+    }
+    nav{
+        padding: 0;
+        transition: all 0.1s;
+    }
+    ul{
+        display: none;
+        transition: all 0.1s;
+    }
+    .info , .right{
+        width: 100vw;
+        height: 30vh;
+        transition: all 0.1s;
+    }
+    .right{
+        height: 40vh;
+        transition: all 0.1s;
+    }
+    .profileImage img{
+        height: 30vmax;
+        transition: all 0.1s;
+    }
+    
+    body{
+        font-size: 3rem;
+        transition: all 0.1s;
+    }
+    .logo{
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: all 0.1s;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Simon's Game .. Let's Play </h1>
+    </div>
+    
+    <div id="outer">
+        <div id="game">
+            <div class="check">
+                <p>Press the blinked boxes in order </p>
+                OR
+                <span>Check the box for assistance : </span>
+                <input type="checkbox" id="check"  placeholder="no" >
+                <div id="msg"></div>
+            </div>
+            <div class="container">
+                <div class="btn" id="red"></div>
+                <div class="btn" id="green"></div>
+                <div class="btn" id="yellow" ></div>
+                <div class="btn" id="blue" ></div>
+            </div>
+
+            <div class="rst">
+                <input type="button" value="START">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
